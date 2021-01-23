@@ -1,0 +1,24 @@
+{
+"Price": 100,
+"Envelopes": 
+	[{ 
+		"Buyer": "A",
+		"Bids": [110, 130]
+	},
+	{
+		"Buyer": "B",
+		"Bids": []
+	},
+	{
+		"Buyer": "C",
+		"Bids": [135]
+	},
+	{
+		"Buyer": "D",
+	 	"Bids": [105, 115, 90]
+	},
+	{
+		"Buyer": "E",
+		"Bids": [132, 135]
+	}]
+}
