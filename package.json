@@ -1,0 +1,23 @@
+{
+  "name": "test_auction",
+  "version": "1.0.0",
+  "description": "",
+  "main": "file_reader.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anokl/TestAuction.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anokl/TestAuction/issues"
+  },
+  "homepage": "https://github.com/anokl/TestAuction#readme",
+  "dependencies": {
+    "jsonschema": "^1.4.0",
+    "package": "^1.0.1"
+  }
+}
