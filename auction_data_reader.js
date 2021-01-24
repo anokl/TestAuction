@@ -28,27 +28,18 @@ var auctionSchema = {
     "required": ["price"]
 }
 
-function readFile(fileName){
-    const data = fs.readFileSync(fileName)
-    var obj = JSON.parse(data)
+module.exports = {
+    readAndValidateAuctionData: function (fileName){
+        const data = fs.readFileSync(fileName)
+        var obj = JSON.parse(data)
 
-    var validator = new jsonschema.Validator()
-    validator.addSchema(buyerSchema)
-    var result  = validator.validate(obj, auctionSchema)
+        var validator = new jsonschema.Validator()
+        validator.addSchema(buyerSchema)
+        var result  = validator.validate(obj, auctionSchema)
 
-    if(!result.valid)
-        throw new Error(result.errors)      
+        if(!result.valid)
+            throw new Error(result.errors)      
 
-    return obj;
+        return obj;
+    }
 }
-
-var args = process.argv.slice(2)
-
-if (args.length != 1){
-    console.log("Usage: <InputFile> ")
-    process.exit(1)
-}
-
-var obj = readFile(args[0])
-console.log(obj)
-
