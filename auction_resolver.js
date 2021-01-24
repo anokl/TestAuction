@@ -1,10 +1,10 @@
 
-function flattenBidsArray(buyers)
+function flattenBidsArray(buyers, price)
 {
     var flatBidsArray = buyers
         .map(buyer => buyer.bids.map(b=> ({name:buyer.name, bid:b })))
         .flat()
-        .filter(a => a.bid >= auctinoData.price)
+        .filter(a => a.bid >= price)
         .sort((a,b) => b.bid - a.bid)
 
     return flatBidsArray
@@ -45,7 +45,7 @@ function getWinningPrice(flatBidsArray, winners, autctionPrice)
  */
 function resolveAuction(auctionData)
 {
-    var flatBidsArray = flattenBidsArray(auctionData.buyers)
+    var flatBidsArray = flattenBidsArray(auctionData.buyers, auctionData.price)
     var winners = getWinners(flatBidsArray)
     var winningPrice = getWinningPrice(flatBidsArray, winners, auctionData.price)
 
