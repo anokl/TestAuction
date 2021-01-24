@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/anokl/TestAuction#readme",
   "dependencies": {
+    "jest": "^26.6.3",
     "jsonschema": "^1.4.0",
     "package": "^1.0.1"
   }
