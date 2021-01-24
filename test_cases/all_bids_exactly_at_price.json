@@ -1,16 +1,17 @@
 {
-"price": 42,
+"price": 42.0,
 "buyers": 
     [{ 
         "name": "Bob",
-        "bids": [50, 60]
+        "bids": [42.0]
     },
     {
         "name": "Bill",
-        "bids": [60]
+        "bids": [42.0]
     },
     {
         "name": "Sally",
-        "bids": [60, 10]
+        "bids": [42.0]
     }]
 }
+     
