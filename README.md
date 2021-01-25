@@ -11,8 +11,8 @@ Unit tests are based on *Jest* framework. These two dependencies need to be inst
 * [main.js](https://github.com/anokl/TestAuction/blob/main/main.js) - program entry point: parsing of command line arguments
 * [auction_data_reader.js](https://github.com/anokl/TestAuction/blob/main/auction_data_reader.js) - input data reading and validation
 * [auction_resolver.js](https://github.com/anokl/TestAuction/blob/main/auction_resolver.js) - the algorithm
-* [tests/\*]() - unit tests folder
-* [test_cases/\*](https://github.com/anokl/TestAuction/tree/main/test_cases) - several test scenarios 
+* [__tests__/\*](https://github.com/anokl/TestAuction/tree/main/__tests__) - unit tests folder
+* [test_scenarious/\*](https://github.com/anokl/TestAuction/tree/main/test_scenarios) - several test scenarios 
 
 ## How to run the program
 
@@ -48,6 +48,15 @@ The output of the program is the following:
 
 Te output is also in JSON fromat where "winners" repreents the list of winner names followed by the winning price. 
 
+
+## How to run test scenarious
+
+To run all test scenarios tape: 
+
+```shell
+npm run test
+```
+
 ## Input data format
 The input data is in JSON format:
 
@@ -79,8 +88,7 @@ The input data is in JSON format:
 ```
 The format is quite self-explanatory. "price" is the auction price. The field is numeric and is obligatory.
 "buyers" is the array of buyers. Each buyer must have a name and an array of bids of numeric type. The bids array my be empty and may have duplicated values.
-More examples of input data can be found here: https://github.com/anokl/TestAuction/tree/main/test_cases
-
+More examples of input data can be found here: https://github.com/anokl/TestAuction/tree/main/test_scenarios
 
 ## Algorithm explanation
 The algorithm consists of three steps. Te first step "flattens" the input data, removes duplicates and uninterested bids (below auction price), and sort bids in descending order. Taking the example above the first step transforms:
