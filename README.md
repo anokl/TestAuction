@@ -35,7 +35,7 @@ The output of the command:
 Usage: main.js <InputFile>
 ```
 
-The program expects the input file containing the auction information. The data format is described in the next section. Given the valid inpt file:
+The program expects the input file containing the auction information. The data format is described in the next section. Given the valid input file:
 
 ```shell
 nodejs main.js ./test_cases/basic.json
