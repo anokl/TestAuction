@@ -16,7 +16,7 @@ Unit tests are based on *Jest* framework. These two dependencies need to be inst
 
 ## How to run the program
 
-Download and install Node.js package for your platform from: https://nodejs.org/en/download/. You can also install Node.js using your favorite package manager. When it is done, open the source repository in command line and type: 
+Download and install Node.js package for your platform from: https://nodejs.org/en/download/. You can also install Node.js using your favorite package manager. When it is done, open the source directory in command line and type: 
 
 ```shell 
 npm install
