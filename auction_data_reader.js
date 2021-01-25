@@ -13,7 +13,7 @@ var buyerSchema = {
             "uniqueItems": true
         }
     },
-    "required": ["name"]
+    "required": ["name", "bids"]
 }
 
 var auctionSchema = {
