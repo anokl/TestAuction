@@ -46,6 +46,9 @@ function getWinningPrice(flatBidsArray, winners, autctionPrice)
 function resolveAuction(auctionData)
 {
     var flatBidsArray = flattenBidsArray(auctionData.buyers, auctionData.price)
+
+    console.log(flatBidsArray);
+
     var winners = getWinners(flatBidsArray)
     var winningPrice = getWinningPrice(flatBidsArray, winners, auctionData.price)
 
