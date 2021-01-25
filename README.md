@@ -11,7 +11,7 @@ Unit tests are based on *Jest* framework. These two dependencies need to be inst
 * [main.js](https://github.com/anokl/TestAuction/blob/main/main.js) - program entry point: parsing of command line arguments
 * [auction_data_reader.js](https://github.com/anokl/TestAuction/blob/main/auction_data_reader.js) - input data reading and validation
 * [auction_resolver.js](https://github.com/anokl/TestAuction/blob/main/auction_resolver.js) - the algorithm
-* [__tests__/\*](https://github.com/anokl/TestAuction/tree/main/__tests__) - unit tests folder
+* [`\__tests\__/\*](https://github.com/anokl/TestAuction/tree/main/__tests__) - unit tests folder
 * [test_scenarious/\*](https://github.com/anokl/TestAuction/tree/main/test_scenarios) - several test scenarios 
 
 ## How to run the program
